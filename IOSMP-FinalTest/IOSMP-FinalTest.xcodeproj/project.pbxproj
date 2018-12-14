@@ -12,6 +12,11 @@
 		8BC95F7921C32665004607C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC95F7721C32665004607C2 /* Main.storyboard */; };
 		8BC95F7B21C32667004607C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BC95F7A21C32667004607C2 /* Assets.xcassets */; };
 		8BC95F7E21C32667004607C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BC95F7C21C32667004607C2 /* LaunchScreen.storyboard */; };
+		8BC95F8621C32E10004607C2 /* BMITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC95F8521C32E10004607C2 /* BMITableViewController.swift */; };
+		8BC95F8821C32F3F004607C2 /* AddBMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC95F8721C32F3F004607C2 /* AddBMIViewController.swift */; };
+		8BC95F8C21C32F90004607C2 /* BMICalculations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BC95F8A21C32F90004607C2 /* BMICalculations.xcdatamodeld */; };
+		8BC95F8E21C33013004607C2 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC95F8D21C33013004607C2 /* CoreDataStack.swift */; };
+		8BC95F9221C35394004607C2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BC95F9121C35394004607C2 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		8BC95F7A21C32667004607C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BC95F7D21C32667004607C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BC95F7F21C32667004607C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BC95F8521C32E10004607C2 /* BMITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMITableViewController.swift; sourceTree = "<group>"; };
+		8BC95F8721C32F3F004607C2 /* AddBMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBMIViewController.swift; sourceTree = "<group>"; };
+		8BC95F8B21C32F90004607C2 /* BMICalculations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BMICalculations.xcdatamodel; sourceTree = "<group>"; };
+		8BC95F8D21C33013004607C2 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		8BC95F9121C35394004607C2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		8BC95F7221C32665004607C2 /* IOSMP-FinalTest */ = {
 			isa = PBXGroup;
 			children = (
+				8BC95F8921C32F74004607C2 /* CoreData */,
 				8BC95F7321C32665004607C2 /* AppDelegate.swift */,
 				8BC95F7521C32665004607C2 /* ViewController.swift */,
 				8BC95F7721C32665004607C2 /* Main.storyboard */,
 				8BC95F7A21C32667004607C2 /* Assets.xcassets */,
 				8BC95F7C21C32667004607C2 /* LaunchScreen.storyboard */,
 				8BC95F7F21C32667004607C2 /* Info.plist */,
+				8BC95F8521C32E10004607C2 /* BMITableViewController.swift */,
+				8BC95F9121C35394004607C2 /* icon.png */,
+				8BC95F8721C32F3F004607C2 /* AddBMIViewController.swift */,
 			);
 			path = "IOSMP-FinalTest";
+			sourceTree = "<group>";
+		};
+		8BC95F8921C32F74004607C2 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8BC95F8A21C32F90004607C2 /* BMICalculations.xcdatamodeld */,
+				8BC95F8D21C33013004607C2 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BC95F9221C35394004607C2 /* icon.png in Resources */,
 				8BC95F7E21C32667004607C2 /* LaunchScreen.storyboard in Resources */,
 				8BC95F7B21C32667004607C2 /* Assets.xcassets in Resources */,
 				8BC95F7921C32665004607C2 /* Main.storyboard in Resources */,
@@ -136,7 +160,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BC95F7621C32665004607C2 /* ViewController.swift in Sources */,
+				8BC95F8C21C32F90004607C2 /* BMICalculations.xcdatamodeld in Sources */,
+				8BC95F8821C32F3F004607C2 /* AddBMIViewController.swift in Sources */,
+				8BC95F8E21C33013004607C2 /* CoreDataStack.swift in Sources */,
 				8BC95F7421C32665004607C2 /* AppDelegate.swift in Sources */,
+				8BC95F8621C32E10004607C2 /* BMITableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +364,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8BC95F8A21C32F90004607C2 /* BMICalculations.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8BC95F8B21C32F90004607C2 /* BMICalculations.xcdatamodel */,
+			);
+			currentVersion = 8BC95F8B21C32F90004607C2 /* BMICalculations.xcdatamodel */;
+			path = BMICalculations.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8BC95F6821C32665004607C2 /* Project object */;
 }

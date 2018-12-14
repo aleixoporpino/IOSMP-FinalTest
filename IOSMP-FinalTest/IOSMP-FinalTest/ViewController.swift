@@ -1,10 +1,11 @@
-//
 //  ViewController.swift
 //  IOSMP-FinalTest
+//  App Description: A simple BMI Calculator using core data
 //
-//  Created by Aleixo Porpino Filho on 2018-12-13.
-//  Copyright © 2018 Porpapps. All rights reserved.
+//  Created by Jose Aleixo Porpino Filho on 2018-12-13.
+//  Student ID 301005491
 //
+//  Version 1.0.0
 
 import UIKit
 
